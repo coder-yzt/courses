@@ -1,13 +1,6 @@
-from calendar import weekday
 import requests
 import json
-import uuid
-import logging
 import datetime
-import time
-import random
-import hashlib
-import string
 from requests.exceptions import *
 
 course_const = {
@@ -20,12 +13,7 @@ time_const = {
     "three":"3、4"
 }
 weekday_const = ["Monday","Tuesday","Wednesday","Thursday","Friday","Satursday","Sunday"]
-
 week_const = [i for i in range(16)]
-logging.basicConfig(
-  level = logging.INFO,
-  format = '%(asctime)s %(levelname)s %(message)s',
-  datefmt = '%Y-%m-%dT%H:%M:%S')
 
 course_list = [
     {"weekday":"Tuesday",
@@ -163,28 +151,28 @@ def get_short(today_courses):
 
 def notify(sckey, message,short):
   if sckey.startswith('SC'):
-    logging.info('准备推送通知...')
+    print('准备推送通知...')
     url = 'https://sc.ftqq.com/{}.send'.format(sckey)
-    data = {'text': '课表推送通知', 'desp': message}
+    data = {'text': '课表推送通知', 'desp': message,"short":short}
     try:
       jdict = json.loads(
               requests.Session().post(url, data = data).text)
     except Exception as e:
-      logging.error(e)
+      print(e)
       raise HTTPError
     else:
       try:
         errmsg = jdict['errmsg']
         if errmsg == 'success':
-          logging.info('推送成功')
+          print('推送成功')
         else:
-          logging.error('{}: {}'.format('推送失败', jdict))
+          print('{}: {}'.format('推送失败', jdict))
       except:
-        logging.error('推送失败')
+        print('推送失败')
   else:
-    logging.info('未配置SCKEY,正在跳过推送')
+    print('未配置SCKEY,正在跳过推送')
 
-  return logging.info('任务结束')
+  return print('任务结束')
 
 
 def main():
