@@ -168,7 +168,7 @@ def main():
     # print(course_list)
     print(courses_str)
     # print(short)
-    # notify(sckey=sckey,message=courses_str,short=short)
+    notify(sckey=sckey,message=courses_str,short=short)
         
 
 if __name__ == '__main__':
