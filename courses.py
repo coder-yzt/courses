@@ -149,7 +149,7 @@ def main():
     # What weekday today is
     # today = "22/08/30"
     
-    utc_now = datetime.datetime.utcnow() + datetime.timedelta(days=1)
+    utc_now = datetime.datetime.utcnow()
     convert_now = TimeUtil.convert_timezone(utc_now, '+8')
     today = str(convert_now.year)[2:] + '/' + str(convert_now.month) + '/' + str(convert_now.day)
     # weekday = get_today_time()
