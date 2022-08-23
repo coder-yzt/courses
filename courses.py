@@ -7,8 +7,8 @@ from copy import deepcopy
 
 course_const = {
 "fxff" : "分析方法",
-"sfy" :"数学分析1",
-"sfs" : "数学分析3"
+"sfy" :"数学分析Ⅰ",
+"sfs" : "数学分析Ⅲ"
 }
 time_const = {
     "one":"1、2",
