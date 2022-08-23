@@ -145,7 +145,8 @@ def notify(sckey, message,short):
 
 
 def main():
-    sckey = 'SCT145803TAlKgazcPaNkOrwRijZBNEOJ6'
+    sckey1 = 'SCT145803TAlKgazcPaNkOrwRijZBNEOJ6'
+    sckey2 = 'SCT166909TzrwgD9pvfzDNdcm0UAhpzHKk'
     # What weekday today is
     # today = "22/08/30"
     
@@ -168,7 +169,8 @@ def main():
     # print(course_list)
     print(courses_str)
     # print(short)
-    notify(sckey=sckey,message=courses_str,short=short)
+    notify(sckey=sckey1,message=courses_str,short=short)
+    notify(sckey=sckey2,message=courses_str,short=short)
         
 
 if __name__ == '__main__':
