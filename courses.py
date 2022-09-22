@@ -29,7 +29,7 @@ course_list = [
     ]}, 
     {'weekday': 'Thursday', 
     'courses': [
-        {'course_name': '数学分析1', 'time': '1、2', 'week': [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 'place': '2501'}, 
+        {'course_name': '数学分析1', 'time': '1、2', 'week': [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 'place': '2406'}, 
         {'course_name': '数学分析3', 'time': '3、4', 'week': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], 'place': '2501'}
         ]}, 
     {'weekday': 'Friday', 
