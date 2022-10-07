@@ -8,7 +8,6 @@ from copy import deepcopy
 course_const = {
 "fxff" : "分析方法",
 "sfy" :"数学分析Ⅰ",
-"sfs" : "数学分析Ⅲ"
 }
 time_const = {
     "one":"1、2",
@@ -20,7 +19,6 @@ week_const = [i for i in range(16)]
 course_list = [
     {'weekday': 'Tuesday', 
     'courses': [
-        {'course_name': '数学分析3', 'time': '1、2', 'week': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], 'place': '2501'}, 
         {'course_name': '分析方法', 'time': '3、4', 'week': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], 'place': '6阶梯'}
         ]}, 
     {'weekday': 'Wednesday', 
@@ -30,18 +28,14 @@ course_list = [
     {'weekday': 'Thursday', 
     'courses': [
         {'course_name': '数学分析1', 'time': '1、2', 'week': [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 'place': '2406'}, 
-        {'course_name': '数学分析3', 'time': '3、4', 'week': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], 'place': '2501'}
         ]}, 
     {'weekday': 'Friday', 
     'courses': [
         {'course_name': '数学分析1', 'time': '1、2', 'week': [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 'place': '2501'}, 
-        {'course_name': '数学分析3', 'time': '3、4', 'week': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], 'place': '2501'}
-    ]}, 
+       ]}, 
     {'weekday': 'Sunday', 
     'courses': [
-        {'course_name': '数学分析3', 'time': '1、2', 'week': [2, 7], 'place': '2504'}, 
         {'course_name': '数学分析1', 'time': '1、2', 'week': [3, 4, 5, 8, 9, 10, 13, 14, 15], 'place': '2406'}, 
-        {'course_name': '数学分析3', 'time': '3、4', 'week': [4, 5, 9, 10], 'place': '2501'}, 
         {'course_name': '数学分析1', 'time': '3、4', 'week': [6, 7, 11, 12, 14], 'place': '2104'}
     ]}
 ]
